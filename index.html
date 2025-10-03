@@ -9,9 +9,12 @@
 </head>
 
 <body>
+    <!-- Изменение: Заменили div на семантические теги -->
     <div class="page-container">
-        <div class="header">Хэдер</div>
-        <div class="nav">
+        <header class="header"> <!-- Было: <div class="header"> -->
+            <h1>Главная</h1> <!-- Добавили заголовок для семантики -->
+        </header>
+        <nav class="nav"> <!-- Было: <div class="nav"> -->
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -19,57 +22,67 @@
                 <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
             </ul>
-        </div>
-        <div class="content">
-            <div class="profile-header">
+        </nav>
+        <main class="content"> <!-- Было: <div class="content"> -->
+            <article class="profile-header"> <!-- Было: <div class="profileheader"> -->
                 <h1 class="profile-title">Информация об авторе</h1>
-                <img class="profile-photo" src="images/photo.png" alt="Фото автора" width="200" height="250">
-                <h2> Бембеев Темир Андреевич</h2>
-                <p>ЭФБО-04-24</p>
-            </div>
+                <img class="profile-photo" src="images/photo.png" alt="Фото
+автора">
+                <h2 class="profile-name">Бембеев Темир Андреевич</h2>
+                <p class="profile-group">ЭФБО-04-24</p>
+            </article>
 
-            <div class="about-me">
-                <p>Обо мне: Я родился в Элисте в 2007 году. Занимаюсь ресейлом реплик товара которые не могут позволить
-                    себе обычные студенты в связи с их финансовым положением</p>
-            </div>
+            <section class="about-me"> <!-- Было: <div class="about-me"> -->
+                <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
+                <p>Я родился в Элисте в 2007 году. Занимаюсь ресейлом реплик товара которые не могут
+                    позволить себе обычные студенты в связи с их финансовым положением
+                </p>
+            </section>
 
-            <div class="skills-container">
-                <div class="skill-tag">Навык 1
-                    <br>
-                    Умею играть на гитаре
+            <section class="skills-container"> <!-- Было: <div class="skillscontainer"> -->
+                <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
+                <div class="skills-grid"> <!-- Обертка для Grid-->
+                    <div class="skill-tag"><h2>Навык 1</h2>
+                        <h3>Умею играть на гитаре</h3></div>
+                    <div class="skill-tag"><h2>Навык 2</h2>
+                        <h3>Умею быстро находить товар</h3>
+                    </div>
+                    <div class="skill-tag"><h2>Навык 3</h2>
+                         <h3>Умею плавать</h3>
+                    </div>
+                    <div class="skill-tag"><h2>Навык 4</h2>
+                         <h3>Умею петь</h3>
+                    </div>
                 </div>
-                <div class="skill-tag">Навык 2
-                    <br>
-                    Умение быстро находить информацию о товаре
-                </div>
-                <div class="skill-tag">Навык 3
-                    <br>
-                    Умение находить общий язык с покупателем
-                </div>
-                <div class="skill-tag">Навык 4
-                    <br>
-                    Обоятельность
-                </div>
-            </div>
+            </section>
 
-            <div class="experience-section">
+            <section class="experience-section"> <!-- Было: <div
+class="experience-section"> -->
                 <h2 class="section-title">Мой опыт работы</h2>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 1</h3>
-                    <p class="experience-desc">Работал на патриках</p>
+                <div class="experience-grid"> <!-- Обертка для Grid -->
+                    <article class="experience-card"> <!-- Было: <div
+class="experience-card"> -->
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Работал на патриках</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Работал тестировщиком товара в Дикси</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Видел бустера вживую</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 4</h3>
+                        <p class="experience-desc">Смотрел ЧБД с Понасенковым</p>
+                    </article>
                 </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 2</h3>
-                    <p class="experience-desc">Работал тестировщиком товара в Дикси</p>
-                </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 3</h3>
-                    <p class="experience-desc">Видел бустера вживую
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">Футер</div>
+            </section>
+        </main>
+        <footer class="footer"> <!-- Было: <div class="footer"> -->
+            <p>Футер</p> <!-- Добавили параграф для семантики -->
+        </footer>
     </div>
 </body>
 
